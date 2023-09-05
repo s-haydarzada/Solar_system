@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 500px;
+}
+
+.solar_container {
+    width: 800px;
+    height: 600px;
+    background-image: url("../images/panoramic-view-sunset-night.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9ba30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mercury {
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 42%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+
+}
+
+.mercury::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-3px, 30px);
+}
+
+.venus {
+    border: 1px solid gray;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 37%;
+    left: 40%;
+    border-radius: 50%;
+    animation: rotate 8s linear infinite;
+
+}
+
+.venus::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+    transform: translate(10px, 30px);
+}
+
+.earth {
+    border: 1px solid gray;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 32%;
+    left: 36%;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+}
+
+.earth::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    transform: translate(10px, 50px);
+}
+
+.moon {
+    position: absolute;
+    top: 19%;
+    left: 0%;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+    width: 30px;
+    height: 30px;
+}
+
+.moon::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(10px, 27px);
+}
+
+
+.mars {
+    border: 1px solid gray;
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 27%;
+    left: 32%;
+    border-radius: 50%;
+    animation: rotate 15s linear infinite;
+}
+
+.mars::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkred;
+    transform: translate(22px, 50px);
+}
+
+
+.yupiter {
+    border: 1px solid gray;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 22%;
+    left: 29%;
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+}
+
+.yupiter::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e9ba30;
+    transform: translate(22px, 70px);
+}
+
+.saturn {
+    border: 1px solid gray;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 17%;
+    left: 25%;
+    border-radius: 50%;
+    animation: rotate 30s linear infinite;
+}
+
+.saturn::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    transform: translate(22px, 94px);
+}
+
+
+.uranus {
+    border: 1px solid gray;
+    width: 460px;
+    height: 460px;
+    position: absolute;
+    top: 12%;
+    left: 21%;
+    border-radius: 50%;
+    animation: rotate 40s linear infinite;
+
+}
+
+.uranus::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transform: translate(36px, 94px);
+}
+
+.neptune {
+    border: 1px solid gray;
+    width: 520px;
+    height: 520px;
+    position: absolute;
+    top: 7%;
+    left: 17%;
+    border-radius: 50%;
+    animation: rotate 50s linear infinite;
+}
+
+.neptune::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: coral;
+    transform: translate(50px, 94px);
+}
+
+.pluto {
+    border: 1px solid gray;
+    width: 580px;
+    height: 580px;
+    position: absolute;
+    top: 2%;
+    left: 13%;
+    border-radius: 50%;
+    animation: rotate 60s linear infinite;
+
+}
+
+.pluto::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    transform: translate(66px, 94px);
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
